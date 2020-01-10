@@ -1,0 +1,123 @@
+.conteudo {
+  padding: 15px 0;
+  min-height: calc(100vh - 130px);
+}
+.conteudo h1 {
+  font-family: 'Lato', sans-serif;
+  line-height: 42px;
+  font-weight: normal;
+  font-size: 40px;
+  color: #2167b2;
+  font-weight: bold;
+  padding: 30px 0 45px 0;
+  text-align: center;
+}
+.conteudo .boxCarro {
+  padding: 15px 15px 30px;
+  background: rgba(72, 81, 100, 0.1);
+  margin: 15px 0 0 0;
+}
+.conteudo .boxCarro h2 {
+  font-family: 'Lato', sans-serif;
+  line-height: 30px;
+  font-weight: normal;
+  font-size: 28px;
+  color: #00a3f2;
+  margin: 30px 0 15px;
+  text-align: center;
+}
+.conteudo .boxCarro p {
+  font-family: 'Lato', sans-serif;
+  line-height: 20px;
+  font-weight: normal;
+  font-size: 18px;
+  color: #485164;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+@media only screen and (max-width: 991px), only screen and (max-device-width: 991px) {
+  .conteudo {
+    padding: 15px 0 0 0;
+  }
+  .conteudo h1 {
+    font-family: 'Lato', sans-serif;
+    line-height: 26px;
+    font-weight: normal;
+    font-size: 24px;
+    color: #2167b2;
+    font-weight: bold;
+    padding: 15px 0 30px;
+  }
+}
+form {
+  padding: 15px 0 0 0;
+  background: rgba(33, 103, 178, 0.05);
+}
+form fieldset {
+  border: none;
+}
+form fieldset legend {
+  display: none;
+}
+form fieldset .formGroup {
+  margin: 0 0 15px 0;
+}
+form fieldset .formGroup label {
+  font-family: 'Lato', sans-serif;
+  line-height: 18px;
+  font-weight: normal;
+  font-size: 16px;
+  color: #00a3f2;
+  display: block;
+  margin: 0 0 15px 0;
+}
+form fieldset .formGroup .sSelect {
+  border: 1px solid #dfdfdf;
+  background: -webkit-linear-gradient(to right, #ffffff, #efefef);
+  background: -o-linear-gradient(to right, #ffffff, #efefef);
+  background: -moz-linear-gradient(to right, #ffffff, #efefef);
+  background: linear-gradient(to right, #ffffff, #efefef);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  position: relative;
+}
+form fieldset .formGroup .sSelect:before {
+  content: "\f078";
+  font: bold normal normal 14px/1 'Font Awesome\ 5 Free';
+  color: #00a3f2;
+  line-height: 14px;
+  position: absolute;
+  top: calc(50% - 5px);
+  right: 10px;
+  z-index: 0;
+}
+form fieldset .formGroup .sSelect select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+  line-height: 16px;
+  font-weight: normal;
+  font-size: 14px;
+  color: #485164;
+  border: none;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+  padding-right: 30px;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even){background-color: #f2f2f2}

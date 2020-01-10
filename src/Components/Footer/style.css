@@ -1,0 +1,17 @@
+footer {
+  background: -webkit-linear-gradient(to right, #00a3f2, #2167b2);
+  background: -o-linear-gradient(to right, #00a3f2, #2167b2);
+  background: -moz-linear-gradient(to right, #00a3f2, #2167b2);
+  background: linear-gradient(to right, #00a3f2, #2167b2);
+  overflow: hidden;
+  padding: 15px 0;
+  border-top: 4px solid #485164;
+}
+footer p {
+  font-family: 'Lato', sans-serif;
+  line-height: 16px;
+  font-weight: normal;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+}

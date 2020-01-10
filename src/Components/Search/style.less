@@ -1,0 +1,85 @@
+@import './../../Mixins.less';
+
+.conteudo{
+    padding:15px 0;
+    min-height:~"calc(100vh - 130px)";
+    h1{
+        .setFont(40px, @secundaria, @Lato);
+        font-weight:bold;
+        padding:(@baseMargin * 2) 0 (@baseMargin * 3) 0;
+        text-align:center;
+    }
+    .boxCarro{
+        padding:@baseMargin @baseMargin (@baseMargin * 2);
+        .hexToRgba(@terciaria, 0.1);
+        margin:@baseMargin 0 0 0;
+        h2{
+            .setFont(28px, @primaria, @Lato);
+            margin:(@baseMargin * 2) 0 @baseMargin;
+            text-align:center;
+        }
+        p{
+            .setFont(18px, @terciaria, @Lato);
+            font-weight:bold;
+            text-align:center;
+            margin:0;
+        }
+    }
+    @media only screen and (max-width:991px), only screen and (max-device-width:991px){
+        &{
+            padding:15px 0 0 0;
+            h1{
+                .setFont(24px, @secundaria, @Lato);
+                font-weight:bold;
+                padding:@baseMargin 0 (@baseMargin * 2);
+            }
+        }
+    }
+}
+
+//
+//  Formulários
+//
+form{
+    padding:15px 0 0 0;
+    .hexToRgba(@secundaria,0.05);
+    fieldset{
+        border:none;
+        legend{
+            display:none;
+        }
+        .formGroup{
+            margin:0 0 @baseMargin 0;
+            label{
+                .setFont(16px, @primaria, @Lato);
+                display:block;
+                margin:0 0 @baseMargin 0;
+            }
+            .sSelect{
+                border:1px solid #dfdfdf;
+                .gradient(#ffffff, #efefef);
+                .borderRadius(3px);
+                position:relative;
+                &:before{
+                    content:"\f078";
+                    .setFontAweSolid(14px, @primaria);
+                    position:absolute;
+                    top:~"calc(50% - 5px)";
+                    right:10px;
+                    z-index:0;
+                }
+                select{
+                    .appearance();
+                    width:100%;
+                    padding:10px;
+                    .setFont(14px, @terciaria, @Lato);
+                    border:none;
+                    background:transparent;
+                    position:relative;
+                    z-index:1;
+                    padding-right:30px;
+                }
+            }
+        }
+    }
+}
